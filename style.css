@@ -80,6 +80,13 @@ main {
     transition: background 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
+.quotes blockquote.clicked {
+    background: #ff6f61; /* Cor de fundo laranja quando clicada */
+    color: #fff; /* Cor do texto em branco para contraste */
+    transform: scale(1.1); /* Aumenta a citação em 10% */
+    opacity: 0.8; /* Torna a citação ligeiramente transparente */
+}
+
 .love-letter {
     padding: 2em;
 }
