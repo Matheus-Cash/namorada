@@ -64,19 +64,7 @@ main {
     margin-bottom: 1em;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 
-footer p {
-    font-size: 1.2em;
-}
 .quotes {
     background: #fff;
     padding: 1em;
@@ -101,4 +89,17 @@ footer p {
 .future-plans h2, .thank-you h2 {
     font-size: 2em;
     margin-bottom: 1em;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2em;
 }
