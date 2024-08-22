@@ -49,3 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const blockquotes = document.querySelectorAll('.quotes blockquote');
+
+    blockquotes.forEach(blockquote => {
+        blockquote.addEventListener('click', function() {
+            // Remove a classe 'clicked' de todas as citações
+            blockquotes.forEach(bq => bq.classList.remove('clicked'));
+            
+            // Adiciona a classe 'clicked' à citação clicada
+            this.classList.add('clicked');
+        });
+    });
+});
