@@ -74,9 +74,10 @@ main {
     font-style: italic;
     margin: 1em 0;
     padding: 1em;
-    background: #f9f9f9;
-    border-left: 4px solid #ff6f61;
+    background: #f9f9f9; /* Cor de fundo padrão */
+    border-left: 4px solid #ff6f61; /* Borda laranja */
     border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
 .love-letter {
