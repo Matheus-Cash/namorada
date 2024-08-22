@@ -89,3 +89,16 @@ footer p {
     font-size: 2em;
     margin-bottom: 1em;
 }
+
+.future-plans, .thank-you {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+.future-plans h2, .thank-you h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
