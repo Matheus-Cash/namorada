@@ -76,6 +76,30 @@ main {
     border-radius: 8px;
 }
 
+.love-letter {
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+.love-letter h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #ff6f61; /* Cor do título para combinar com o cabeçalho */
+}
+
+.letter {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.letter p {
+    margin-bottom: 1em;
+}
+
 footer {
     background: #333;
     color: #fff;
