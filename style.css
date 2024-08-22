@@ -1,4 +1,5 @@
 /* Reset básico */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    padding-bottom: 3em; /* Para garantir que o footer não sobreponha o conteúdo */
 }
 
 header {
@@ -33,11 +35,11 @@ main {
 }
 
 .photos {
-    margin-bottom: 1em;
+    margin-bottom: 2em; /* Aumentei o espaço inferior para consistência */
 }
 
 .photos h2 {
-    font-size: 1em;
+    font-size: 1.5em; /* Ajustei o tamanho para ficar mais consistente com o layout */
     margin-bottom: 1em;
 }
 
@@ -52,20 +54,7 @@ main {
     border-radius: 8px;
 }
 
-.message {
-    background: #fff;
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.message h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-
-.quotes {
+.message, .quotes, .future-plans, .thank-you {
     background: #fff;
     padding: 1em;
     border-radius: 8px;
@@ -73,31 +62,28 @@ main {
     margin-bottom: 2em;
 }
 
-.quotes h2 {
+.message h2, .quotes h2, .future-plans h2, .thank-you h2 {
     font-size: 2em;
     margin-bottom: 1em;
 }
 
-.future-plans, .thank-you {
-    background: #fff;
+.quotes blockquote {
+    font-style: italic;
+    margin: 1em 0;
     padding: 1em;
+    background: #f9f9f9;
+    border-left: 4px solid #ff6f61;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 2em;
 }
 
-.future-plans h2, .thank-you h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: absolute;
-    bottom: 0;
+    position: relative; /* Ajustado para não sobrepor o conteúdo */
     width: 100%;
+    bottom: 0;
 }
 
 footer p {
