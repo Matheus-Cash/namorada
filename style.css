@@ -77,3 +77,15 @@ footer {
 footer p {
     font-size: 1.2em;
 }
+.quotes {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+.quotes h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
