@@ -136,6 +136,16 @@ footer p {
         width: 90%;
         max-width: none;
     }
+    /* Estilos para a animação das imagens */
+.photo-gallery img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-gallery img.zoomed {
+    transform: scale(1.2); /* Aumenta a imagem em 20% */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 
     .letter {
         font-size: 1em;
