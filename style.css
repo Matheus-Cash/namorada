@@ -1,5 +1,6 @@
 /* Reset básico */
 /* Reset básico */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +35,7 @@ main {
     padding: 2em;
 }
 
+/* Seções e Estilos Gerais */
 .photos {
     margin-bottom: 2em; /* Aumentei o espaço inferior para consistência */
 }
@@ -46,6 +48,7 @@ main {
 .photo-gallery {
     display: flex;
     gap: 1em;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem conforme o tamanho da tela */
 }
 
 .photo-gallery img {
@@ -54,7 +57,7 @@ main {
     border-radius: 8px;
 }
 
-.message, .quotes, .future-plans, .thank-you {
+.message, .quotes, .future-plans, .thank-you, .love-letter {
     background: #fff;
     padding: 1em;
     border-radius: 8px;
@@ -62,7 +65,7 @@ main {
     margin-bottom: 2em;
 }
 
-.message h2, .quotes h2, .future-plans h2, .thank-you h2 {
+.message h2, .quotes h2, .future-plans h2, .thank-you h2, .love-letter h2 {
     font-size: 2em;
     margin-bottom: 1em;
 }
@@ -77,11 +80,7 @@ main {
 }
 
 .love-letter {
-    background: #fff;
     padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 2em;
 }
 
 .love-letter h2 {
@@ -112,4 +111,55 @@ footer {
 
 footer p {
     font-size: 1.2em;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .photos h2, .message h2, .quotes h2, .future-plans h2, .thank-you h2, .love-letter h2 {
+        font-size: 1.3em;
+    }
+
+    .photo-gallery {
+        flex-direction: column; /* Empilha as imagens verticalmente em telas menores */
+        align-items: center;
+    }
+
+    .photo-gallery img {
+        width: 90%;
+        max-width: none;
+    }
+
+    .letter {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .photos h2, .message h2, .quotes h2, .future-plans h2, .thank-you h2, .love-letter h2 {
+        font-size: 1.2em;
+    }
+
+    .letter {
+        font-size: 0.9em;
+    }
 }
