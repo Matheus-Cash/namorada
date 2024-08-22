@@ -29,3 +29,23 @@ window.onload = () => {
     showGreeting();
     addHoverEffects();
 };
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.photo-gallery img');
+
+    images.forEach(image => {
+        image.addEventListener('click', function() {
+            // Remove a classe 'zoomed' de todas as imagens
+            images.forEach(img => img.classList.remove('zoomed'));
+
+            // Adiciona a classe 'zoomed' à imagem clicada
+            this.classList.add('zoomed');
+            
+            // Remove a classe 'zoomed' após a animação terminar
+            setTimeout(() => {
+                this.classList.remove('zoomed');
+            }, 300); // Tempo igual ao da animação
+        });
+    });
+});
